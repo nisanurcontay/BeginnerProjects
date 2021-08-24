@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Note Taker</title>
+  </head>
+  <body>
+    <h1>Note Taker</h1>
+    <h2>Add A New Note:</h2>
+    <form action="">
+      <label for="note">Note:</label>
+      <input type="text" name="note" id="note" />
+      <button type="button" id="add" onclick="addNotes(); clearNote()">
+        Add Note
+      </button>
+    </form>
+    <div id="mynotes"></div>
+    <div id="overlay"></div>
+    <div class="modal" id="modal">
+      <button id="close-button" onclick="closePage()" >&times;</button>
+    </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+

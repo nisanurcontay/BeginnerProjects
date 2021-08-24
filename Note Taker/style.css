@@ -1,0 +1,111 @@
+* {
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 10px;
+}
+body {
+  background-color: #9921e8;
+  background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 60px;
+  color: #d9e4f5;
+  font-weight: normal;
+}
+input {
+  width: 60vw;
+  height: 5vh;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+label,
+button {
+  font-weight: bold;
+}
+
+button {
+  background-color: #d9e4f5;
+  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+  border-radius: 4px;
+  border: none;
+  height: 3vh;
+  position: relative;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: white;
+  border-radius: 10px;
+  z-index: 585858;
+  width: 500px;
+  max-width: 80%;
+  overflow-y: auto;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#close-button {
+  display: block;
+  background-color: white;
+  border: none;
+  font-weight: 1000;
+  height: 30px;
+  margin-left: 10px;
+}
+
+#close-button:hover {
+  color: darkgray;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.noteSection {
+  background-color: white;
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.p {
+  height: 40px;
+  overflow: hidden;
+  text-align: left;
+  margin-left: 10px;
+  border-radius: 0%;
+}
+
+.noteSection > button {
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+#mynotes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
